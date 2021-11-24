@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Happy+Monkey&family=Sanchez&display=swap');
+
+* {
+	font-family: 'Happy Monkey', cursive;
+}
+
+body {
+	margin: 0;
+	background-color: black;
+	display: flex;
+	color: white;
+}
+
+#lateral {
+	flex: initial;
+	padding: 20px;
+}
+
+#lateral h1 {
+	border: 1px solid white;
+	padding: 15px;
+	font-size: 50px;
+}
+
+#lateral a {
+	display: block;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid white;
+	color: white;
+	text-decoration: none;
+}
+
+#lateral img {
+  width: 200px;
+}
+
+#lateral div {
+	border: 1px solid white;
+}
+
+#lateral div a {
+	display: block;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid white;
+}
+
+#postagens {
+	flex: auto;
+	width: 15px;
+	padding: 5px;
+	margin: 20px;
+}
+
+#postagens > div {
+  border: 1px solid white;
+}
+
+#postagens div h2, h3 {
+	margin: 10px;
+}
+
+.comentarios div h4, h5 {
+  margin: 10px;
+}
+
+.acoes {
+  margin: 10px;
+}
+
+.comentarios {
+	border: 1px solid white;
+	margin-left: 20px;
+	margin: 10px;
+}
+
+#linha-vertical {
+	top: 0;
+	bottom: 0;
+	border-right: 1px solid white;
+}
+
+#new-post {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	margin: 20px;
+	padding: 5px;
+}
+
+form {
+	background-color: black;
+	width: 25%;
+  height: 100%;
+  right: 0;
+}
+
+form input {
+	display: inline-block;
+}
+
+#message {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 20px;
+	padding: 5px;
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Happy+Monkey&family=Sanchez&display=swap');
+
+* {
+	font-family: 'Happy Monkey', cursive;
+}
+
+body {
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-family: 'Happy Monkey', cursive;
+	font-size: 30px;
+	margin-top: 60px;
+}
+
+input {
+	height: 40px;
+	font-size: 14pt;
+}

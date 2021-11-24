@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Perfil</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='perfil.css') }}">
+</head>
+  <body>
+    <div id="centro">
+      <h3>0<br />Seguidores</h3>
+      <img src="https://cdn.discordapp.com/attachments/910586745593139230/912353040596623360/png_20211122_114500_0000.png"/>
+      <h3>0<br />Postagens</h3>
+    </div>
+    <h1>@{{ user['u'] }}</h1>
+    <p>...</p>
+    <hr />
+    <div id="postagens">
+      <div>
+        <h4>como subi num pé de alface?</h4>
+        <h5>pega uma escada</h5>
+      </div>
+    </div>
+    <h2 id="inicio"><a href="/">Inicio</a></h2>
+    <h2 id="editar"><a href="javascript:editar()">Editar</a></h2>
+    <form hidden>
+      <a href="javascript:fechar()">Fechar</a>
+      <p>ABCDEFG</p>
+    </form>
+    <script src="{{ url_for('static', filename='perfil.js') }}"></script>
+  </body>
+</html>

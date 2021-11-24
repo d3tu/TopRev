@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>TopRev</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+	<div id="lateral">
+    <img src="https://cdn.discordapp.com/attachments/910586745593139230/912409460520136765/png_20211122_152913_0000.png" />
+    {% if logged %}
+    <a href="/perfil">Perfil</a>
+    <a href="/logout">Deslogar</a>
+    {% else %}
+    <a href="/login">Login</a>
+    {% endif %}
+		<br />
+		<div>
+			<a>Geral</a>
+			<a>Estudos</a>
+			<a>Notícias</a>
+			<a>Jogos</a>
+		</div>
+	</div>
+	<div id="linha-vertical"></div>
+	<div id="postagens">
+		<div>
+			<h2>@User.teste</h2>
+			<h3>alguem online nesse site?</h3>
+      <div class="acoes">
+				<button onclick="like()">👍</button>
+        <button onclick="dislike()">👎</button>
+        <button>💬</button>
+      </div>
+      <div class="comentarios">
+				<div>
+					<h4>@User.teste2</h4>
+					<h5>opa</h5>
+				</div>
+			</div>
+    </div>
+  </div>
+
+	<button
+    id="new-post"
+    onclick="novaPostagem()"
+  >+ Nova postagem</button>
+
+  <p id="message" hidden></p>
+
+  <form align="center" onsubmit="return false;" hidden>
+    <p>Nova postagem</p>
+    <p>Conteúdo da postagem</p>
+    <input type="text" />
+    <p>TÓPICO:</p>
+    <input type="text" /><br />
+    <button onclick="postar()">Postar</button><br />
+    <button onclick="fecharPostagem()">Fechar</button>
+  </form>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>

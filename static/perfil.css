@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Happy+Monkey&family=Sanchez&display=swap');
+
+* {
+	font-family: 'Happy Monkey', cursive;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background-color: black;
+  color: white;			
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  background-color: rgb(190, 186, 186); 
+  border: 1px solid rgb(13, 63, 230); 
+  padding: 4px;
+  position: fixed;
+  top: 0;
+  margin-top: 2px;
+}
+
+#inicio {
+  left: 0;
+  margin-left: 250px;
+}
+
+#editar {
+  right: 0;
+  margin-right: 250px;
+}
+
+h3 {
+  display: inline-block;
+  margin: 50px;
+  font-size: 25px;
+}
+
+#centro {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin-top: 30px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+img {
+  width: 200px;
+}
+
+#postagens div {
+  border: 1px solid rgb(13, 63, 230);
+  display: inline-block;
+  padding: 20px;
+  text-align: left;
+}
+
+
+form {
+  position: fixed;
+  top: 0;
+  right: 50%;
+  left: 50%;
+  background-color: rgb(17, 0, 255);
+}
